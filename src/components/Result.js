@@ -2,7 +2,35 @@ import React, { useContext } from 'react';
 import DataContext from '../context/dataContext';
 
 const Result = () => {
-    const { showResult, quizs, marks, startOver }  = useContext(DataContext);
+    const { showResult, quizs, marks, startOver, fullName } = useContext(DataContext);
+
+    const postResultsToAPI = () => {
+        const apiUrl = 'https://65393a6ee3b530c8d9e823f5.mockapi.io/Result';
+
+        const data = {
+            fullName,
+            marks,
+        };
+
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('Results posted successfully.');
+            } else {
+                console.error('Failed to post results.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    };
+
     return (
         <section className="bg-dark text-white" style={{ display: `${showResult ? 'block' : 'none'}` }}>
             <div className="container">
@@ -13,6 +41,8 @@ const Result = () => {
                             <h3 className='mb-3 fw-bold'>Your score is {marks} out of {quizs.length * 5}</h3>
 
                             <button onClick={startOver} className='btn py-2 px-4 btn-light fw-bold d-inline'>Start Over</button>
+
+                            <button onClick={postResultsToAPI} className='btn py-2 px-4 btn-light fw-bold d-inline'>Submit Results</button>
                         </div>
                     </div>
                 </div>
