@@ -28,14 +28,7 @@ const Start = () => {
                                 placeholder="Full Name"
                                 value={fullName}
                                 onChange={handleFullNameChange}
-                                    style={{
-        width: '100%',            // Adjust the width as needed
-        padding: '10px',           // Adjust the padding as needed
-        border: '1px solid #ccc',  // Add a border
-        borderRadius: '5px',       // Add rounded corners
-        fontSize: '16px'          // Adjust the font size as needed
-    }}
-                            />
+                                   />
                         </div>
                         <button onClick={handleStartQuiz} className="btn px-4 py-2 bg-light text-dark fw-bold">Start Quiz</button>
                     </div>
