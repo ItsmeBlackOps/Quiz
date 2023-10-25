@@ -47,9 +47,9 @@ const Result = () => {
                             <h1 className='mb-2 fw-bold'>{marks > (quizs.length * 5 / 2) ? 'Awesome!' : 'Oops!'}</h1>
                             <h3 className='mb-3 fw-bold'>Your score is {marks} out of {quizs.length * 5}</h3>
 
-                            <button onClick={startOver} className='btn py-2 px-4 btn-light fw-bold d-inline'>Start Over</button>
+                            
 
-                            <button onClick={postResultsToAPI} className='btn py-2 px-4 btn-light fw-bold d-inline'>Submit Results</button>
+                            
                         </div>
                     </div>
                 </div>
