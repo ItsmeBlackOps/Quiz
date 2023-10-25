@@ -45,7 +45,7 @@ export const DataProvider = ({children}) => {
 
       if (selected === question.answer) {
         event.target.classList.add('bg-success');
-        setMarks(marks + 5);
+        setMarks(marks + 1);
       } else {
         event.target.classList.add('bg-danger');
       }
