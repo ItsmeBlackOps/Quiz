@@ -46,6 +46,7 @@ const Result = () => {
                         <div className={`text-light text-center p-5 rounded ${marks > (quizs.length) ? 'bg-success' : 'bg-danger'}`}>
                             <h1 className='mb-2 fw-bold'>{marks > (quizs.length) ? 'Awesome!' : 'Oops!'}</h1>
                             <h3 className='mb-3 fw-bold'>Your score is {marks} out of {quizs.length}</h3>
+                            <h3 className='mb-3 fw-bold'>Your score is {((marks / quizs.length) * 100).toFixed(2)}%</h3>
 
                             
 
