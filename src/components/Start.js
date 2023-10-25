@@ -16,7 +16,7 @@ const Start = () => {
         } else {
             // Proceed with starting the quiz and storing the name in 'data'
             setFullName(fullName);
-            startQuiz(data);
+            startQuiz();
         }
     };
 
