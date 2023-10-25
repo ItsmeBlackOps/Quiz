@@ -8,7 +8,7 @@ const Result = () => {
         const apiUrl = 'https://65393a6ee3b530c8d9e823f5.mockapi.io/Result';
 
         const data = {
-            fullName = {fullName},
+            fullName,
             marks,
         };
 
