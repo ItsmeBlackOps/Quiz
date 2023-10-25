@@ -2,20 +2,17 @@ import React, { useContext, useState } from 'react';
 import DataContext from '../context/dataContext';
 
 const Start = () => {
-    const { startQuiz, showStart } = useContext(DataContext);
-    const [fullName, setFullName] = useState(''); // State to store full name
+    const { startQuiz, showStart, fullName, setFullName } = useContext(DataContext); // Get fullName and setFullName from the context
 
     const handleFullNameChange = (e) => {
-        setFullName(e.target.value);
+        setFullName(e.target.value); // Use setFullName to update the fullName state in the context
     };
 
     const handleStartQuiz = () => {
         if (fullName.trim() === '') {
-            // Ensure a name is provided before starting the quiz
             alert('Please enter your full name before starting the quiz.');
         } else {
-            // Proceed with starting the quiz and storing the name in 'data'
-            startQuiz(fullName); // Pass the fullName to startQuiz
+            startQuiz(fullName);
         }
     };
 
