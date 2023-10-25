@@ -15,8 +15,7 @@ const Start = () => {
             alert('Please enter your full name before starting the quiz.');
         } else {
             // Proceed with starting the quiz and storing the name in 'data'
-            setFullName(fullName);
-            startQuiz(fullName);
+            startQuiz(fullName); // Pass the fullName to startQuiz
         }
     };
 
