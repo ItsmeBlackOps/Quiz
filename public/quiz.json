@@ -1,112 +1,207 @@
 [
     {
         "id": "01",
-        "question" : "Which of the following is the correct name of React.js?",
-        "options": [
-            "React",
-            "React.js",
-            "ReactJS",
-            "All of the above"
-        ],
-        "answer": "All of the above"
+        "question": "What is the primary data structure in pandas for storing and manipulating data?",
+        "options": ["Series", "Array", "List", "Tuple"],
+        "answer": "Series"
     },
     {
         "id": "02",
-        "question" : "Which of the following are the advantages of React.js?",
-        "options": [
-            "React.js can increase the application's performance with Virtual DOM.",
-            "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
-            "React.js can render both on client and server side.",
-            "All of the above"
-        ],
-        "answer": "All of the above"
+        "question": "Which of the following is NOT a valid method to read data from a CSV file using pandas?",
+        "options": ["pd.read_csv()", "pd.read_excel()", "pd.read_sql()", "pd.read_json()"],
+        "answer": "pd.read_sql()"
     },
     {
         "id": "03",
-        "question" : "Which of the following is not a disadvantage of React.js?",
-        "options": [
-            "React.js has only a view layer. We have put your code for Ajax requests, events and so on.",
-            "The library of React.js is pretty large.",
-            "The JSX in React.js makes code easy to read and write.",
-            "The learning curve can be steep in React.js."
-        ],
-        "answer": "The JSX in React.js makes code easy to read and write."
+        "question": "How do you select a specific column 'column_name' from a DataFrame df?",
+        "options": ["df.column_name", "df.select('column_name')", "df['column_name']", "df.loc['column_name']"],
+        "answer": "df['column_name']"
     },
     {
         "id": "04",
-        "question" : "Which of the following command is used to install create-react-app?",
-        "options": [
-            "npm install -g create-react-app",
-            "npx create-react-app my-app",
-            "npm install create-react-app",
-            "npm install -f create-react-app"
-        ],
-        "answer": "npx create-react-app my-app"
+        "question": "What is the default sorting order in pandas for the sort_values() method?",
+        "options": ["Ascending", "Descending", "Random", "Alphabetical"],
+        "answer": "Ascending"
     },
     {
         "id": "05",
-        "question" : "What of the following is used in React.js to increase performance?",
-        "options": [
-            "Original DOM",
-            "Virtual DOM",
-            "Both A and B.",
-            "None of the above."
-        ],
-        "answer": "Virtual DOM"
+        "question": "Which method is used to check for missing values in a pandas DataFrame?",
+        "options": ["df.check_missing()", "df.isnull()", "df.empty()", "df.missing_values()"],
+        "answer": "df.isnull()"
     },
     {
         "id": "06",
-        "question" : "What is the default port where webpack-server runs?",
+        "question": "How do you rename the columns of a DataFrame df to ['A', 'B', 'C']?",
         "options": [
-            "3000",
-            "8080",
-            "3030",
-            "6060"
+            "df.rename(columns=['A', 'B', 'C'])",
+            "df.columns = ['A', 'B', 'C']",
+            "df.rename(['A', 'B', 'C'], axis='columns')",
+            "df.set_columns(['A', 'B', 'C'])"
         ],
-        "answer": "3000"
+        "answer": "df.columns = ['A', 'B', 'C']"
     },
     {
         "id": "07",
-        "question" : "How many numbers of elements a valid react component can return?",
+        "question": "In pandas, what does the groupby() method do?",
         "options": [
-            "1",
-            "2",
-            "3",
-            "Unlimited"
+            "Aggregates data based on one or more columns",
+            "Sorts data in ascending order",
+            "Filters rows with specific conditions",
+            "Combines two DataFrames"
         ],
-        "answer": "1"
+        "answer": "Aggregates data based on one or more columns"
     },
     {
         "id": "08",
-        "question" : "What is the declarative way to render a dynamic list of components based on values in an array?",
-        "options": [
-            "Using the reduce array method",
-            "Using the <Each /> component",
-            "Using the Array.map() method",
-            "With a for/while loop"
-        ],
-        "answer": "Using the Array.map() method"
+        "question": "Which function is used to apply a custom function to every element of a DataFrame or Series?",
+        "options": ["map()", "apply()", "transform()", "for_each()"],
+        "answer": "apply()"
     },
     {
         "id": "09",
-        "question" : "What is a state in React?",
-        "options": [
-            "A permanent storage.",
-            "Internal storage of the component.",
-            "External storage of the component.",
-            "None of the above."
-        ],
-        "answer": "Internal storage of the component."
+        "question": "To drop all rows with missing values in a DataFrame df, you can use:",
+        "options": ["df.dropna()", "df.remove_missing()", "df.drop_null()", "df.delete_rows_with_null()"],
+        "answer": "df.dropna()"
     },
     {
         "id": "10",
-        "question" : "What are the two ways to handle data in React?",
+        "question": "Which of the following is used to merge two DataFrames based on a common column?",
+        "options": ["combine()", "concat()", "join()", "merge()"],
+        "answer": "merge()"
+    },
+    {
+        "id": "11",
+        "question": "What is the purpose of the pivot_table() method in pandas?",
         "options": [
-            "State & Props",
-            "Services & Components",
-            "State & Services",
-            "State & Component"
+            "Reshaping data based on the values in a column",
+            "Sorting data based on a specific column",
+            "Aggregating data using a summary function",
+            "Merging two DataFrames"
         ],
-        "answer": "State & Props"
+        "answer": "Aggregating data using a summary function"
+    },
+    {
+        "id": "12",
+        "question": "How can you convert a Series of strings to lowercase in a DataFrame df?",
+        "options": ["df.lower()", "df.apply(lambda x: x.lower())", "df.str.lower()", "df.convert_lower()"],
+        "answer": "df.str.lower()"
+    },
+    {
+        "id": "13",
+        "question": "What is the function of the pd.cut() method in pandas?",
+        "options": [
+            "Concatenates two DataFrames",
+            "Divides a continuous variable into discrete bins",
+            "Merges two DataFrames based on a common column",
+            "Filters rows based on a condition"
+        ],
+        "answer": "Divides a continuous variable into discrete bins"
+    },
+    {
+        "id": "14",
+        "question": "To calculate the mean, median, and standard deviation of a column 'A' in a DataFrame df, you can use:",
+        "options": ["df.mean(), df.median(), df.std()", "df.aggregate(['mean', 'median', 'std'])", "df.mean().median().std()", "df.describe()"],
+        "answer": "df.mean(), df.median(), df.std()"
+    },
+    {
+        "id": "15",
+        "question": "How do you set the index of a DataFrame df to a specific column 'index_column'?",
+        "options": ["df.set_index('index_column')", "df.index('index_column')", "df.change_index('index_column')", "df.index = 'index_column'"],
+        "answer": "df.set_index('index_column')"
+    },
+    {
+        "id": "16",
+        "question": "Which method is used to apply a function to elements of a DataFrame along a specified axis?",
+        "options": ["map()", "applymap()", "apply()", "transform()"],
+        "answer": "apply()"
+    },
+    {
+        "id": "17",
+        "question": "What does the pd.to_datetime() function do in pandas?",
+        "options": [
+            "Converts a DataFrame to a datetime format",
+            "Converts a datetime column to a string format",
+            "Converts a string column to a datetime format",
+            "Converts a float column to an integer format"
+        ],
+        "answer": "Converts a string column to a datetime format"
+    },
+    {
+        "id": "18",
+        "question": "Which of the following is NOT a valid method to filter rows in a DataFrame based on a condition?",
+        "options": ["df.filter()", "df[df['column'] > 5]", "df.query()", "df.loc[]"],
+        "answer": "df.filter()"
+    },
+    {
+        "id": "19",
+        "question": "How can you concatenate two DataFrames vertically in pandas?",
+        "options": ["pd.concat([df1, df2], axis=0)", "df1.append(df2, axis=1)", "df1.merge(df2, how='inner')", "df1.join(df2)"],
+        "answer": "pd.concat([df1, df2], axis=0)"
+    },
+    {
+        "id": "20",
+        "question": "What does the pd.get_dummies() function do in pandas?",
+        "options": ["Encodes categorical variables as binary dummy/indicator variables", "Retrieves information about the DataFrame's data types", "Converts numeric variables to categorical variables", "Filters out duplicate rows"],
+        "answer": "Encodes categorical variables as binary dummy/indicator variables"
+    },
+    {
+        "id": "21",
+        "question": "To calculate the correlation matrix for a DataFrame df, you can use:",
+        "options": ["df.corr_matrix()", "df.correlation()", "df.corr()", "df.calculate_correlation()"],
+        "answer": "df.corr()"
+    },
+    {
+        "id": "22",
+        "question": "Which method is used to perform element-wise addition between two DataFrames of the same shape?",
+        "options": ["df.add()", "df.combine()", "df.merge()", "df.append()"],
+        "answer": "df.add()"
+    },
+    {
+        "id": "23",
+        "question": "How can you round all the values in a DataFrame df to the nearest integer?",
+        "options": ["df.round()", "df.apply(round)", "df.apply(lambda x: round(x))", "df.int()"],
+        "answer": "df.apply(lambda x: round(x))"
+    },
+    {
+        "id": "24",
+        "question": "What is the purpose of the pd.melt() function in pandas?",
+        "options": ["Sorts the DataFrame in ascending order", "Transforms wide data into long format", "Filters out rows with missing values", "Combines two DataFrames"],
+        "answer": "Transforms wide data into long format"
+    },
+    {
+        "id": "25",
+        "question": "Which method is used to shift the elements of a Series or DataFrame by a specified number of periods?",
+        "options": ["df.shift()", "df.move()", "df.transform()", "df.transfer()"],
+        "answer": "df.shift()"
+    },
+    {
+        "id": "26",
+        "question": "What does the pd.set_option() function do in pandas?",
+        "options": ["Sets the precision of floating-point numbers", "Sets the random seed for data generation", "Sets the DataFrame's column names", "Sets the data type of a column"],
+        "answer": "Sets the precision of floating-point numbers"
+    },
+    {
+        "id": "27",
+        "question": "How can you drop duplicate rows from a DataFrame df based on all columns?",
+        "options": ["df.drop_duplicates(subset=None)", "df.remove_duplicates()", "df.drop_duplicates(columns=None)", "df.delete_duplicates()"],
+        "answer": "df.drop_duplicates(subset=None)"
+    },
+    {
+        "id": "28",
+        "question": "What does the pd.to_csv() function do in pandas?",
+        "options": ["Reads data from a CSV file", "Converts a DataFrame to a CSV file", "Combines two DataFrames", "Calculates the mean of a column"],
+        "answer": "Converts a DataFrame to a CSV file"
+    },
+    {
+        "id": "29",
+        "question": "What does the pd.to_pickle() function do in pandas?",
+        "options": ["Converts a DataFrame to a pickle file", "Converts a pickle file to a DataFrame", "Reads data from a pickle file", "Merges two DataFrames"],
+        "answer": "Converts a DataFrame to a pickle file"
+    },
+    {
+        "id": "30",
+        "question": "How can you reset the index of a DataFrame df after setting a new index?",
+        "options": ["df.reset_index()", "df.set_index(None)", "df.change_index(None)", "df.clear_index()"],
+        "answer": "df.reset_index()"
     }
 ]
