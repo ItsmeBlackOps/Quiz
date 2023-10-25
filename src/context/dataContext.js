@@ -9,6 +9,7 @@ export const DataProvider = ({children}) => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState('');
   const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [fullName, setFullName] = useState('');
   const [marks, setMarks] = useState(0);
 
   // Display Controlling States
@@ -87,7 +88,7 @@ export const DataProvider = ({children}) => {
         <DataContext.Provider value={{
             startQuiz,showStart,showQuiz,question,quizs,checkAnswer,correctAnswer,
             selectedAnswer,questionIndex,nextQuestion,showTheResult,showResult,marks,
-            startOver
+            startOver,fullName, setFullName,
         }} >
             {children}
         </DataContext.Provider>
