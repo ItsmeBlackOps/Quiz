@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import DataContext from '../context/dataContext';
 
 const Result = () => {
@@ -30,6 +30,13 @@ const Result = () => {
             console.error('Error:', error);
         });
     };
+
+    // Use useEffect to automatically submit the result when showResult is true
+    useEffect(() => {
+        if (showResult) {
+            postResultsToAPI();
+        }
+    }, [showResult]);
 
     return (
         <section className="bg-dark text-white" style={{ display: `${showResult ? 'block' : 'none'}` }}>
